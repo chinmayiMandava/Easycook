@@ -84,7 +84,6 @@ allLinks.forEach((a) => {
         }, 1000);
       }
       sectionEl.scrollIntoView({ behavior: "smooth", block: "start" });
-      obs.observe(sectionEl);
     }
 
     if (a.classList.contains("page-nav-link")) {

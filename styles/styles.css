@@ -125,6 +125,7 @@ h1 {
 .btn-mobile-nav {
   display: none;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .icon-mobile-nav {
