@@ -1,0 +1,792 @@
+/***************************/
+/*HEADER SECTION*/
+/***************************/
+header {
+  /* height: 100vh; */
+  /* background-image: linear-gradient(
+      rgba(32, 32, 32, 0.4),
+      rgba(32, 32, 32, 0.4)
+    ),
+    url("../assets/images/hero.webp"); */
+  /* background-size: cover; */
+  /* color: #fff; */
+  position: relative;
+  background-color: #ebfbee;
+}
+
+nav {
+  padding: 3.6rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  padding: 2rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.page-navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.page-navigation a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.section-hero {
+  padding: 4.8rem 0 8rem 0;
+  background-color: #ebfbee;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.hero {
+  max-width: 130rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-img {
+  background-image: url("../assets/images/hero.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.hero-text-box {
+  margin-bottom: 4.8rem;
+  text-align: start;
+}
+
+.header-description {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+  text-align: start;
+}
+
+.customers {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.customer {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #ebfbee;
+  margin-right: -1.6rem;
+}
+
+.customers-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.customers-number {
+  color: #37b24d;
+  font-weight: 600;
+}
+
+.page-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+.page-logo span {
+  display: block;
+  background-image: url("../assets/images/chef-hat.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.btn-mobile-nav {
+  display: none;
+  z-index: 1000;
+}
+
+.icon-mobile-nav {
+  width: 4.4rem;
+  height: 4.4rem;
+  color: #444;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+  position: fixed;
+  top: 3.6rem;
+  right: 3.6rem;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+/***************************/
+/*FEATURED IN SECTION*/
+/***************************/
+
+.section-featured {
+  padding: 3.2rem 0;
+}
+
+.featured-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  filter: brightness(0);
+  opacity: 50%;
+  height: 3.2rem;
+}
+
+/***************************/
+/*OPTIONS AVAILABLE SECTION*/
+/***************************/
+
+.section-options-available {
+  padding: 9.6rem 0 3.6rem 0;
+  background-color: #ebfbee;
+}
+
+.options-available-description {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.food-options {
+  column-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.food-option {
+  position: relative;
+  height: 36rem;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.food-option:hover {
+  transform: translateY(-1.2rem);
+}
+
+.food-option-title {
+  position: absolute;
+  bottom: 5.6rem;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 1.6rem;
+}
+
+.kid-friendly-option {
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0.4)
+    ),
+    url("../assets/images/food-options/kid-friendly-opt.jpg");
+}
+
+.veggie-meal-option {
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0.4)
+    ),
+    url("../assets/images/food-options/veggie-food-opt.jpg");
+}
+
+.meat-veggie-option {
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0.6)
+    ),
+    url("../assets/images/food-options/meat-veggies-opt.jpg");
+}
+
+.balanced-meal-option {
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0.6)
+    ),
+    url("../assets/images/food-options/wholesome-food-opt.jpg");
+}
+
+.banner {
+  background-color: #bef264;
+  padding: 2.8rem;
+  border-radius: 4px;
+}
+
+.banner-title {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.banner-description {
+  font-size: 1.6rem;
+}
+
+.view-all-menus {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.view-all-text {
+  color: #2b8a3e;
+  text-decoration: none;
+  border-bottom: 1px solid #2b8a3e;
+  transition: all 0.3s;
+  font-size: 1.6rem;
+}
+
+.view-all-text:hover {
+  border-bottom: none;
+}
+
+.eating-together {
+  display: block;
+  height: 3.6rem;
+  width: 2.4rem;
+  background: url("../assets/images/icons/eating-together.svg");
+}
+
+/***************************/
+/*WHATS INSIDE SECTION*/
+/***************************/
+
+.section-whats-inside {
+  padding: 9.6rem 0 3.6rem 0;
+}
+
+.whats-inside-content {
+  /* display: flex;
+  gap: 2.8rem; */
+}
+
+.whats-inside-image-box {
+  overflow: hidden;
+}
+
+.whats-inside-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/images/cooking.jpg");
+  background-size: cover;
+  width: 58rem;
+  height: 48rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.whats-inside-image:hover {
+  transform: scale(1.1);
+}
+
+.whats-inside-title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 2.8rem;
+}
+
+.whats-inside-description {
+  font-size: 1.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.whats-inside-description p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2.4rem;
+  text-align: start;
+}
+
+.offer-button {
+  margin-left: 3.6rem;
+}
+
+/***************************/
+/*WHY CHOOSE US SECTION*/
+/***************************/
+
+.section-why-choose-us {
+  padding: 9.6rem 0 3.6rem 0;
+  background-color: #ebfbee;
+}
+
+.why-choose-us-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+/* .why-choose-us-content {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.why-choose-us-title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.why-choose-us-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/***************************/
+/*SIGNUP SECTION*/
+/***************************/
+
+.section-signup {
+  padding: 9.6rem 0 3.6rem 0;
+  color: #fff;
+}
+
+.signup-banner {
+  background-color: #2b8a3e;
+  border-radius: 4px;
+  /* display: flex;
+  justify-content: space-between; */
+  gap: 2rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.signup-content {
+  padding: 6.6rem 2.4rem 0 3.6rem;
+  margin: 0 auto;
+}
+
+.signup-heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.signup-description {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.conditions-text {
+  font-size: 1.2rem;
+  margin-bottom: 4.4rem;
+}
+
+.signup-image {
+  width: 100%;
+  background-size: cover;
+}
+
+/***************************/
+/*REVIEWS SECTION*/
+/***************************/
+
+.section-reviews {
+  padding: 9.6rem 0 3.6rem 0;
+  background-color: #ebfbee;
+}
+
+.reviews-text {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.food-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-item {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.reviews {
+  margin-bottom: 3.6rem;
+}
+
+.review {
+  padding: 2.4rem 1.2rem;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.review:hover > .review-rating {
+  transform: scale(1.1);
+}
+
+.review-rating {
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.review-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  min-height: 6.6rem;
+}
+
+.review-customer {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.review-customer-image {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.customer-name {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.customer-job {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/***************************/
+/*REVIEWS SECTION*/
+/***************************/
+
+.section-pricing {
+  padding: 9.6rem 0 3.6rem 0;
+}
+
+.pricing-container {
+  padding: 3rem 4rem 4.4rem 4rem;
+  background-color: #ebfbee;
+  border-radius: 4px;
+  width: max-content;
+  border: 2px solid #ebfbee;
+}
+
+.pricing-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.pricing-content {
+  display: flex;
+  gap: 2.8rem;
+  justify-content: center;
+  margin-bottom: 2.8rem;
+}
+
+.pricing-plan {
+  color: #2b8a3e;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+.pricing-container--starter {
+  background-color: #fff;
+}
+
+.price {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.price-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #777;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.price span {
+  font-size: 2.8rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 1.2rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 2rem;
+}
+
+.feature:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/***************************/
+/* DIALOG CONTAINER */
+/***************************/
+
+.offer-dialog-container {
+  color: #fff;
+  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s;
+}
+
+#dialog {
+  top: -50%;
+}
+
+#dialog[open] {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+}
+
+.offer-text {
+  font-size: 1.6rem;
+  color: #d3f9d8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.offer-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.input-field {
+  margin-bottom: 1.6rem;
+}
+
+.input-text {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.offer-not-link {
+  font-size: 1.4rem;
+  color: #d3f9d8;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  border-bottom: 1px solid #d3f9d8;
+  transition: all 0.3s;
+}
+
+.offer-not-link:hover {
+  border-bottom: 1px solid #2b8a3e;
+}
+
+.offer-condition-text {
+  font-size: 1.3rem;
+  margin-bottom: 1.6rem;
+}
+
+.offer-description {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/***************************/
+/* FAQ SECTION */
+/***************************/
+
+.section-FAQ {
+  padding: 9.6rem 0 3.6rem 0;
+  background-color: #ebfbee;
+  margin-bottom: 12.8rem;
+}
+
+.FAQ-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.FAQ-description {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.FAQ-block {
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  padding: 2.4rem;
+  padding-bottom: 2.8rem;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2rem;
+  row-gap: 2.4rem;
+  margin-bottom: 2rem;
+  max-height: 7rem;
+  transition: all 0.3s ease-out;
+}
+
+.FAQ-number {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #999;
+}
+
+.FAQ-question {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.icon--FAQ {
+  cursor: pointer;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.FAQ-answer {
+  opacity: 0;
+  font-size: 1.6rem;
+  grid-column: 2;
+  font-weight: 400;
+  transition: all 0.3s ease-out;
+  transform: translateY(-200%);
+}
+
+.open {
+  border-top: 3px solid #2b8a3e;
+}
+
+.open.FAQ-block {
+  max-height: 16rem;
+}
+
+.open .FAQ-number {
+  color: #2b8a3e;
+}
+
+.open .FAQ-question {
+  color: #2b8a3e;
+}
+
+.open .FAQ-answer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.open .icon--FAQ {
+  color: #2b8a3e;
+  transform: rotate(180deg);
+}
+
+/***************************/
+/* FOOTER SECTION */
+/***************************/
+
+.section-footer {
+  padding: 3.6rem 0 3.6rem 0;
+}
+
+.footer {
+  align-items: baseline;
+}
+
+.footer-column {
+  p:not(:first-child) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.footer-column-header {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}

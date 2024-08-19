@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easycook &mdash; Cooking made easy</title>
+    <link rel="icon" href="assets/images/chef-hat-favicon.svg"/>
+    <!-- GOOGLE FONT STYLES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- INTERNAL STYLES -->
+    <link rel="styleSheet" href="./styles/general.css" />
+    <link rel="styleSheet" href="./styles/styles.css" />
+    <link rel="styleSheet" href="./styles/queries.css" />
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="page-logo" href="#"><span></span>EASY COOK</a>
+        <div class="page-navigation">
+          <a href="#menus" class="page-nav-link">Our menus</a>
+          <a href="#how-it-works" class="page-nav-link">How it works</a>
+          <a href="#testimonials" class="page-nav-link">Testimonials</a>
+          <a href="#pricing" class="page-nav-link">Pricing</a>
+          <a href="#faq" class="page-nav-link">FAQ</a>
+        </div>
+        <!-- MOBILE NAVIGATION -->
+        <div class="btn-mobile-nav">
+          <ion-icon class="icon icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon icon-mobile-nav" name="close-outline"></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <section class="section-hero">
+      <div class="grid grid--2-cols hero">
+        <div>
+        <div class="hero-text-box">
+          <h1>
+            Delicious meal kits delivered to your home, every single
+            day
+          </h1>
+          <p class="header-description">
+            We provide fresh and high-quality ingredients with step-by-step
+            recipe cards to cook yummy meals at the comfort of your home.
+          </p>
+          <div class="action-btns">
+            <a href="#pricing" class="button primary--button">Get started</a>
+            <a href="#menus" class="button secondary--button">Learn more &darr;</a>
+          </div>
+        </div>
+        <div class="customers">
+          <div>
+            <img
+              src="./assets/images/customers/customer-1.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+            <img
+              src="./assets/images/customers/customer-2.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+            <img
+              src="./assets/images/customers/customer-3.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+            <img
+              src="./assets/images/customers/customer-4.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+            <img
+              src="./assets/images/customers/customer-5.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+            <img
+              src="./assets/images/customers/customer-6.jpg"
+              class="customer"
+              alt="A photo of customer"
+            />
+          </div>
+          <p class="customers-text">
+            <span class="customers-number">50,000+</span> trusted customers!
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/images/hero.png" class="hero-img" alt="Woman enjoying food, meals in storage container and food bowls on a table">
+      </div>
+      </div>
+    </section>
+    <section class="section-featured">
+      <p class="featured-text">As featured in</p>
+      <div class="container logos">
+        <img src="./assets/images/logos/business-insider.png" class="logo" />
+        <img src="./assets/images/logos/the-new-york-times.png" class="logo" />
+        <img src="./assets/images/logos/techcrunch.png" class="logo" />
+        <img src="./assets/images/logos/forbes.png" class="logo" />
+        <img src="./assets/images/logos/usa-today.png" class="logo" />
+      </div>
+    </section>
+    <section class="section-options-available" id="menus">
+      <div class="container container--medium">
+        <div class="options-available-text-box">
+          <h2 class="secondary-heading">Choose 100+ menu and market items</h2>
+          <p class="options-available-description">
+            Plus, discover the latest seasonal items available for you
+          </p>
+        </div>
+        <div class="grid grid--4-cols food-options">
+          <div class="food-option">
+            <img class="kid-friendly-option" />
+            <p class="food-option-title">Family<br />friendly</p>
+            <span class="tag tag--kid">Kid tested recipes</span>
+          </div>
+          <div class="food-option">
+            <img class="meat-veggie-option" />
+            <p class="food-option-title">Meat&<br />veggies</p>
+            <span class="tag tag--sea">Sea food & veggie recipes</span>
+          </div>
+          <div class="food-option">
+            <img class="veggie-meal-option" />
+            <p class="food-option-title">Vegetarian</p>
+            <span class="tag">Plant based recipes</span>
+          </div>
+          <div class="food-option">
+            <img class="balanced-meal-option" />
+            <p class="food-option-title">Fit&<br />wholesome</p>
+            <span class="tag tag--fit">Protien rich recipes</span>
+          </div>
+        </div>
+        <div class="view-all-menus">
+          <a href="#" class="view-all-text">View all menus &rarr;</a>
+        </div>
+        <!-- <div class="banner">
+          <h3 class="banner-title">
+            Everything you need,<br />
+            all in one box
+          </h3>
+          <p class="banner-description">
+            Cooking made simple, so you can savor special moments with your
+            loved ones.
+          </p>
+          <div class="eating-together"></div>
+        </div>
+      </div> -->
+    </section>
+    <section class="section-whats-inside" id="how-it-works">
+      <div class="container grid grid--2-cols whats-inside-content">
+        <div class="whats-inside-image-box">
+          <img class="whats-inside-image" />
+        </div>
+        <div class="whats-inside-text">
+          <h3 class="whats-inside-title">
+            What you get delivered with each meal?
+          </h3>
+          <div class="whats-inside-description">
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              Ingredients that are pre-measured to the exact amount needed
+            </p>
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              High quality ingredients sourced straight from the farm
+            </p>
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              Quality meals at home without breaking your bank
+            </p>
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              Easy to follow recipes with clear nutritonal info
+            </p>
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              Pre chopped veggies and meat
+            </p>
+            <p>
+              <ion-icon name="checkmark-outline" class="icon"></ion-icon>
+              Easy and quick process
+            </p>
+          </div>
+          <div class="offer-button">
+            <a class="button primary--button" id="try-offer-btn"
+              >Get your first meal for free</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-why-choose-us">
+      <h2 class="why-choose-us-heading">Why choose us?</h2>
+      <div class="container container--large grid grid--4-cols why-choose-us-content">
+        <div class="why-choose-us-block">
+          <ion-icon
+            name="heart-outline"
+            class="icon icon--background"
+          ></ion-icon>
+          <h3 class="why-choose-us-title">Most loved meal kits</h3>
+          <p class="why-choose-us-description">
+            Our huge recipe selection and quality ingredients wows our customers
+          </p>
+        </div>
+        <div class="why-choose-us-block">
+          <ion-icon
+            name="wallet-outline"
+            class="icon icon--background"
+          ></ion-icon>
+          <h3 class="why-choose-us-title">Affordable meal kits</h3>
+          <p class="why-choose-us-description">
+            Enjoy healthy meals
+            without breaking your bank
+          </p>
+        </div>
+        <div class="why-choose-us-block">
+          <ion-icon
+            name="pause-outline"
+            class="icon icon--background"
+          ></ion-icon>
+          <h3 class="why-choose-us-title">Pause anytime</h3>
+          <p class="why-choose-us-description">
+            Going on vacation?
+            Just pause your subscription,
+            and we refund unused days
+          </p>
+        </div>
+        <div class="why-choose-us-block">
+          <ion-icon
+            name="leaf-outline"
+            class="icon icon--background"
+          ></ion-icon>
+          <h3 class="why-choose-us-title">Local and organic</h3>
+          <p class="why-choose-us-description">
+            We resource fresh,
+            organic and local products
+            directly from farms.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-signup" id="sign-up">
+      <div class="container grid grid--2-cols signup-banner">
+        <div class="signup-content">
+          <h2 class="signup-heading">
+            Make cooking easy with
+            our ready to cook meal kits
+          </h2>
+          <p class="signup-description">
+            Try your first meal kit for free and enjoy convenient,
+            delicious meals delivered right to your door!
+          </p>
+          <p class="conditions-text">*Terms and conditions apply</p>
+          <a href="#pricing" class="button secondary--button">Try now</a>
+        </div>
+        <img
+          src="./assets/images/signup-image.jpg"
+          alt="table filled with food"
+          class="signup-image"
+        />
+      </div>
+    </section>
+    <section class="section-reviews" id="testimonials">
+      <p class="reviews-text">Testimonials</p>
+      <div class="container">
+        <div class="grid grid--3-cols reviews">
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              The recipes are delicious, and the step-by-step instructions make
+              cooking stress-free.
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/customer-4.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Luke anthony<br /><span class="customer-job">Freelancer</span>
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              Absolutely love this meal kit service! The ingredients were fresh,
+              and the recipes were incredibly easy to follow.
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/customer-1.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Sara salvatore<br /><span class="customer-job">Florist</span>
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star-half" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              Inexpensive, healthy and great-tasting meals, without even having
+              to order manually! It feels truly magical.
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/ben.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Ben thompson<br /><span class="customer-job"
+                  >Software engineer</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              This is a life saver! I just started a company, so there's no time
+              for cooking. I couldn't live without my daily meals now!
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/steve.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Steve miller<br /><span class="customer-job">Entrepreneur</span>
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              Inexpensive, healthy and great-tasting meals, without even having
+              to order manually! It feels truly magical.
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/hannah.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Hannah smith<br /><span class="customer-job">Author</span>
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <span class="review-rating">
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+              <ion-icon name="star" class="icon icon--small"></ion-icon>
+            </span>
+            <p class="review-description">
+              It frees up so much time! Plus, everything is organic and vegan
+              and without plastic.
+            </p>
+            <div class="review-customer">
+              <img
+                src="./assets/images/customers/dave.jpg"
+                alt="a photo customer"
+                class="review-customer-image"
+              />
+              <p class="customer-name">
+                Dave sebastian<br /><span class="customer-job">Architect</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="food-items">
+          <img
+            src="./assets/images/gallery/gallery-1.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-2.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-3.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-4.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-5.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-6.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-7.jpg"
+            alt="food"
+            class="food-item"
+          />
+          <img
+            src="./assets/images/gallery/gallery-8.jpg"
+            alt="food"
+            class="food-item"
+          />
+        </div> -->
+      </div>
+    </section>
+    <section class="section-pricing" id="pricing">
+      <h3 class="pricing-heading">Unlock your perfect plan</h3>
+      <div class="container pricing-content">
+        <div class="pricing-container pricing-container--starter">
+          <h3 class="pricing-plan">Starter</h3>
+          <p class="price"><span>₹</span>5880</p>
+          <p class="price-description">per month, that's just ₹196 per meal</p>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>1 meal per day</p>
+          </span>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>Order from 11AM to 9PM</p>
+          </span>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>Free delivery</p>
+          </span>
+          <span class="feature">
+            <ion-icon name="close-outline" class="icon icon--small"></ion-icon>
+          </span>
+          <a href="#" class="button primary--button">Start eating well</a>
+        </div>
+        <div class="pricing-container">
+          <h3 class="pricing-plan">Complete</h3>
+          <p class="price"><span>₹</span>9480</p>
+          <p class="price-description">per month, that's just ₹158 per meal</p>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p><strong>2 meals</strong> per day</p>
+          </span>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>Order <strong>24/7</strong></p>
+          </span>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>Free delivery</p>
+          </span>
+          <span class="feature">
+            <ion-icon
+              name="checkmark-outline"
+              class="icon icon--small"
+            ></ion-icon>
+            <p>Access to latest recipe kits</p>
+          </span>
+          <a href="#" class="button primary--button">Start eating well</a>
+        </div>
+      </div>
+      <p class="price-description">
+        Prices include all taxes applicable. You can cancel at anytime!
+      </p>
+    </section>
+    <section class="section-FAQ" id="faq">
+      <div class="container container--small">
+        <h3 class="FAQ-heading">Frequently asked questions</h3>
+        <p class="FAQ-description">
+          Check out the most common questions our customers asked and if you
+          Still have questions, Contact our customer support.
+        </p>
+        <div id="FAQ-block-1" class="FAQ-block">
+          <span class="FAQ-number">01</span>
+          <p class="FAQ-question">How many times do you deliver in a week?</p>
+          <ion-icon
+            id="FAQ-icon-1"
+            name="chevron-down-outline"
+            class="icon icon--FAQ"
+          ></ion-icon>
+          <p class="FAQ-answer">
+            We deliver twice a week. You can expect delivery anytime between 8AM to 11AM
+          </p>
+        </div>
+        <div id="FAQ-block-2" class="FAQ-block">
+          <span class="FAQ-number">02</span>
+          <p class="FAQ-question">Do you accept returns and refunds?</p>
+          <ion-icon
+            id="FAQ-icon-2"
+            name="chevron-down-outline"
+            class="icon icon--FAQ"
+          ></ion-icon>
+          <p class="FAQ-answer">
+            No, We do not accept returns and refunds due to the nature of the
+            product.
+          </p>
+        </div>
+        <div id="FAQ-block-3" class="FAQ-block">
+          <span class="FAQ-number">03</span>
+          <p class="FAQ-question">What payment gateways do you accept?</p>
+          <ion-icon
+            id="FAQ-icon-3"
+            name="chevron-down-outline"
+            class="icon icon--FAQ"
+          ></ion-icon>
+          <p class="FAQ-answer">At the moment we offer Cash On Delivery.</p>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
+    <footer class="section-footer">
+      <div class="container grid grid--4-cols footer">
+        <!-- FOOTER LOGO -->
+        <a class="page-logo footer-column-header" href="#"><span></span>EASY COOK</a>
+        <div class="footer-column">
+          <p class="footer-column-header">Contact us</p>
+          <p>13 J P Nagar, Goregaon, Mumbai</p>
+          <p>+91 999999999</p>
+          <p>hello@easycook.com</p>
+        </div>
+        <!-- <div class="footer-column">
+          <p class="footer-column-header">Account</p>
+          <p>iOS app</p>
+          <p>Android app</p>
+        </div> -->
+        <div class="footer-column">
+          <p class="footer-column-header">Company</p>
+          <p>About Easycook</p>
+          <p>Resource partners</p>
+          <p>Careers</p>
+        </div>
+        <div class="footer-column">
+          <p class="footer-column-header">Resources</p>
+          <p>Recipe directory</p>
+          <p>Help center</p>
+          <p>Privacy & terms</p>
+        </div>
+      </div>
+    </footer>
+    <div id="dialog-backdrop">
+      <dialog id="dialog">
+        <ion-icon
+          id="close-dialog"
+          name="close-outline"
+          class="icon icon--dialog"
+        ></ion-icon>
+        <p class="offer-text">your discount is applied, don't miss out!</p>
+        <h3 class="offer-heading">
+          Get savings straight<br />
+          into your inbox!
+        </h3>
+        <form method="dialog">
+          <div class="input-field">
+            <p class="input-text">Your name</p>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-field">
+            <p class="input-text">Your email address</p>
+            <input type="email" id="email" required />
+          </div>
+          <button class="button dialog--button" id="sign-up-btn">Sign up</button>
+          <!-- <a href="#" class="offer-not-link">Continue without offer</a> -->
+          <p class="offer-condition-text">
+            *Exclusive for first time subscribers
+          </p>
+          <p class="offer-description">
+            By sharing your email address, you agree to receive marketing email
+            and consent to our<br />
+            Terms & conditions and Privacy Policy. Offer valid for first time
+            subscribers only.
+          </p>
+        </form>
+      </dialog>
+      <div class="snack-bar">You’ve successfully signed up!</div>
+    </div>
+  </body>
+</html>
