@@ -15,6 +15,7 @@ const signupBtn = document.getElementById("sign-up-btn");
 const username = document.getElementById("name");
 const email = document.getElementById("email");
 const hero = document.querySelector(".section-hero");
+const form = document.querySelector("form");
 const nav = document.querySelector("nav");
 
 offerButton.addEventListener("click", () => {
@@ -27,6 +28,7 @@ offerButton.addEventListener("click", () => {
 
 closeButton.addEventListener("click", () => {
   dialog.close();
+  form.reset();
   backdrop.classList.remove("offer-dialog-container");
   body.style.overflowY = "scroll";
 });
@@ -34,6 +36,7 @@ closeButton.addEventListener("click", () => {
 signupBtn.addEventListener("click", () => {
   if (username.checkValidity() && email.checkValidity()) {
     dialog.close();
+    form.reset();
     backdrop.classList.remove("offer-dialog-container");
     body.style.overflowY = "scroll";
     snackbar.classList.add("display");
@@ -78,12 +81,12 @@ allLinks.forEach((a) => {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       if (!nav.classList.contains("sticky")) {
+        sectionEl.style["scrollMarginTop"] = "12rem";
         sectionEl.scrollIntoView({ behavior: "smooth", block: "start" });
-        setTimeout(() => {
-          sectionEl.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 1000);
+      } else {
+        sectionEl.style["scrollMarginTop"] = "0rem";
+        sectionEl.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-      sectionEl.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     if (a.classList.contains("page-nav-link")) {

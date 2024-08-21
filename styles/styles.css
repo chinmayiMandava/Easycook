@@ -252,7 +252,7 @@ h1 {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgb(0, 0, 0, 0.6)
+      rgb(0, 0, 0, 0.4)
     ),
     url("../assets/images/food-options/meat-veggies-opt.jpg");
 }
@@ -264,7 +264,7 @@ h1 {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgb(0, 0, 0, 0.6)
+      rgb(0, 0, 0, 0.4)
     ),
     url("../assets/images/food-options/wholesome-food-opt.jpg");
 }
@@ -329,8 +329,7 @@ h1 {
 }
 
 .whats-inside-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/images/cooking.jpg");
+  background-image: url("../assets/images/cooking.jpg");
   background-size: cover;
   width: 58rem;
   height: 48rem;
