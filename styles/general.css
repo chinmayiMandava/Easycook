@@ -99,6 +99,12 @@ strong {
   text-transform: uppercase;
 }
 
+.tag--back {
+  bottom: unset;
+  top: 1.6rem;
+  box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.08);
+}
+
 .tag--kid {
   background-color: #99e9f2;
 }
@@ -218,4 +224,29 @@ input {
 .snack-bar.display {
   visibility: visible;
   top: 7.4rem;
+}
+
+ol {
+  padding: 4rem;
+  text-align: left;
+}
+
+li {
+  padding-left: 1.6rem;
+  margin-top: 2.4rem;
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    border: 2px solid #2b8a3e;
+    position: absolute;
+    top: -0.8rem;
+    left: -2.8rem;
+  }
 }
